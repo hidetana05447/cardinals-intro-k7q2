@@ -324,3 +324,9 @@ body{background-color:#fff;background-image:linear-gradient(rgba(21,21,21,.08) 1
 .hero-pair{margin-top:-22px}
 .boy-swing{background:#fff;border:var(--bw) solid #fff;border-radius:16px;box-shadow:5px 5px 0 var(--red);padding:8px 8px 0;width:158px;margin:26px auto 4px}
 .girl-fist{display:block;background:#fff;border:var(--bw) solid var(--ink);border-radius:16px;box-shadow:5px 5px 0 var(--ink);padding:8px 8px 0;width:158px;margin:8px auto 22px}
+
+/* ===== v9：保護者の右にキャラ／スイングは説明の下／枠なし */
+.side-char{float:right;width:104px;height:auto;margin:-2px 0 8px 10px;animation:bob 3.2s ease-in-out infinite}
+#parents .win{clear:both}
+.rows .boy-swing{display:block;width:118px;height:auto;margin:8px 0 0 auto;background:none;border:0;box-shadow:none;padding:0;border-radius:0}
+.girl-fist{background:none;border:0;box-shadow:none;padding:0;border-radius:0;width:150px}
