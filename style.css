@@ -306,8 +306,11 @@ body{background-position:0 var(--bgy,0px)}
 .hero h1 .h-1{font-size:1.18em;line-height:1.4}
 .hero h1 .chip{padding:0 .22em;margin:0 .08em;border-radius:7px;box-shadow:3px 3px 0 var(--ink)}
 
-/* ===== v6：男の子（左）はスイング、女の子（右）はジャンプ。どちらもアニメWebP */
-.hero-chars .hero-boy{width:150px;height:auto;animation:none;translate:-90px 0}
-.hero-chars .hero-girl{width:150px;height:auto;animation:none;translate:90px 0}
-.hero-chars.in .hero-girl,.hero-chars.in .hero-boy{translate:0 0}
-.hero-chars{gap:14px}
+/* ===== v7：白ベース＋方眼の背景、ヒーローは2人のジャンプ、合間にスイング */
+:root{--paper:#fff}
+body{background-color:#fff;background-image:linear-gradient(rgba(21,21,21,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(21,21,21,.08) 1px,transparent 1px);background-size:28px 28px;background-position:0 0!important}
+.hero-pair{margin:12px auto 4px;max-width:340px}
+.hero-pair img{width:100%;height:auto;margin:0 auto}
+.interlude{display:flex;justify-content:center;align-items:flex-end;background:#fff;border-top:var(--bw) solid var(--ink);border-bottom:var(--bw) solid var(--ink);padding:18px 0 0;overflow:hidden}
+.interlude img{width:170px;height:auto;margin-bottom:-2px}
+.girl-fist{width:150px;height:auto;animation:none}
