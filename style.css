@@ -314,3 +314,13 @@ body{background-color:#fff;background-image:linear-gradient(rgba(21,21,21,.08) 1
 .interlude{display:flex;justify-content:center;align-items:flex-end;background:#fff;border-top:var(--bw) solid var(--ink);border-bottom:var(--bw) solid var(--ink);padding:18px 0 0;overflow:hidden}
 .interlude img{width:170px;height:auto;margin-bottom:-2px}
 .girl-fist{width:150px;height:auto;animation:none}
+
+/* ===== v8：2人ジャンプを大きく／合間は静止画のジャンプ（ゆらゆら）、体験会の下にスイング */
+.hero-pair{max-width:300px;margin:6px auto 0}
+.interlude img.boy-bob{width:120px;animation:bob 3.2s ease-in-out infinite;margin-bottom:-2px}
+.boy-swing{display:block;width:150px;height:auto;margin:0 auto -6px}
+.hero h1{position:relative;z-index:2}
+.hero-pair{margin-top:-40px}
+.hero-pair{margin-top:-22px}
+.boy-swing{background:#fff;border:var(--bw) solid #fff;border-radius:16px;box-shadow:5px 5px 0 var(--red);padding:8px 8px 0;width:158px;margin:26px auto 4px}
+.girl-fist{display:block;background:#fff;border:var(--bw) solid var(--ink);border-radius:16px;box-shadow:5px 5px 0 var(--ink);padding:8px 8px 0;width:158px;margin:8px auto 22px}
