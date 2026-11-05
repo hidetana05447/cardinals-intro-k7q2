@@ -336,3 +336,6 @@ body{background-color:#fff;background-image:linear-gradient(rgba(21,21,21,.08) 1
 #taiken .sched{clear:both}
 
 #results .win{clear:both}
+
+/* ===== v11（試作・戻せる）：白ベースの区間に、ごく薄いグレーを交互に敷く。戻すときはこのブロックを削除 ===== */
+#about,#results{background:#f4f4f4}
