@@ -306,10 +306,8 @@ body{background-position:0 var(--bgy,0px)}
 .hero h1 .h-1{font-size:1.18em;line-height:1.4}
 .hero h1 .chip{padding:0 .22em;margin:0 .08em;border-radius:7px;box-shadow:3px 3px 0 var(--ink)}
 
-/* ===== v5：男の子のスイング（コマ切り替え＋中間コマ。戻すときはこのブロックと index.html の .swing を元の img に） ===== */
-.swing{width:150px;aspect-ratio:330/520;background:url(img/boy_swing.webp?v=6) 0 0/600% 500% no-repeat;animation:swing 2.43s steps(1) infinite!important}
-@keyframes swing{0.00%{background-position:0.000% 0.000%} 24.71%{background-position:20.000% 0.000%} 25.78%{background-position:40.000% 0.000%} 26.85%{background-position:60.000% 0.000%} 30.56%{background-position:80.000% 0.000%} 31.63%{background-position:100.000% 0.000%} 32.70%{background-position:0.000% 25.000%} 36.41%{background-position:20.000% 25.000%} 37.48%{background-position:40.000% 25.000%} 38.55%{background-position:60.000% 25.000%} 42.26%{background-position:80.000% 25.000%} 43.33%{background-position:100.000% 25.000%} 44.40%{background-position:0.000% 50.000%} 48.11%{background-position:20.000% 50.000%} 49.18%{background-position:40.000% 50.000%} 50.25%{background-position:60.000% 50.000%} 54.78%{background-position:80.000% 50.000%} 55.85%{background-position:100.000% 50.000%} 56.92%{background-position:0.000% 75.000%} 61.45%{background-position:20.000% 75.000%} 62.52%{background-position:40.000% 75.000%} 63.59%{background-position:60.000% 75.000%} 74.30%{background-position:80.000% 75.000%} 75.37%{background-position:100.000% 75.000%} 76.44%{background-position:0.000% 100.000%} 97.86%{background-position:20.000% 100.000%} 98.93%{background-position:40.000% 100.000%}}
-@media(prefers-reduced-motion:reduce){.swing{animation:none!important}}
-
-/* ===== v6：女の子はジャンプのアニメWebP（img/girl_jump.webp）。戻すときは girl_wave.png に */
-.hero-chars .hero-girl{width:150px;height:auto;animation:none}
+/* ===== v6：男の子（左）はスイング、女の子（右）はジャンプ。どちらもアニメWebP */
+.hero-chars .hero-boy{width:150px;height:auto;animation:none;translate:-90px 0}
+.hero-chars .hero-girl{width:150px;height:auto;animation:none;translate:90px 0}
+.hero-chars.in .hero-girl,.hero-chars.in .hero-boy{translate:0 0}
+.hero-chars{gap:14px}
